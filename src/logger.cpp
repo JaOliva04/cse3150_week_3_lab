@@ -56,10 +56,10 @@ double minValue(const double values[], int size) {
 
 double maxValue(const double values[], int size) {
     // TODO: throw "Empty" if size==0, else compute max
-    double maxValue = values[0];
     if (size == 0) {
         throw std::string("Empty");
     }
+    double maxValue = values[0];
     for(int i = 1; i < size; i++){
         if(values[i] > maxValue){
             maxValue = values[i];
